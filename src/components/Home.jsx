@@ -39,7 +39,7 @@ function Home() {
            to="https://drive.google.com/uc?export=download&id=1wknVsNofpK-WkVndbvECcUQIFlQczKep"
         >
           <button
-            id="resume-button-1"
+            id="resume-button-2"
            
              onClick={resumedown}
           >
