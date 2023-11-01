@@ -92,13 +92,25 @@ function Navbar() {
         >
           <button
             id="resume-button-1"
-            
              onClick={resumedown}
           >
             <i style={{ marginRight: "5px" }} className="far fa-file-alt"></i>
             Resume
           </button>
         </Link> */}
+
+
+          <button
+            id="resume-button-1"
+             onClick={resumedown}
+          >
+            <Link onClick={()=>goTo(false)} 
+          className="nav-link resume"
+           to="https://drive.google.com/uc?export=download&id=1wknVsNofpK-WkVndbvECcUQIFlQczKep"
+        >Resume</Link>
+         
+          </button>
+       
 
         {/* <Link
           onClick={() => goTo(false)}
@@ -120,7 +132,7 @@ function Navbar() {
           </button>
         </Link> */}
 
-        <a id="resume-button-1" className="nav-link resume"
+        {/* <a id="resume-button-1" className="nav-link resume"
          href="https://drive.google.com/file/d/1wknVsNofpK-WkVndbvECcUQIFlQczKep/view?usp=sharing"
 
          
@@ -134,7 +146,10 @@ function Navbar() {
           }}
           >
          Resume
-          </a>
+          </a> */}
+
+
+          
       </div>
     </div>
   );
