@@ -59,38 +59,38 @@ function Skills() {
                 <p className='teckName skills-card-name'>react</p>
             </div>
             <div className="singleDiv skills-card">
-            <img width="160" height="160" src="https://img.icons8.com/office/160/express-js.png" alt="express-js"/>
+            <img className="skills-card-img" width="160" height="160" src="https://img.icons8.com/office/160/express-js.png" alt="express-js"/>
                 <p className='teckName skills-card-name'>express js</p>
             </div>
 
             <div className="singleDiv skills-card">
-            <img width="240" height="240" src="https://img.icons8.com/fluency/240/node-js.png" alt="node-js"/>
+            <img className="skills-card-img" width="240" height="240" src="https://img.icons8.com/fluency/240/node-js.png" alt="node-js"/>
                 <p className='teckName'>node js</p>
             </div>
 
             <div className="singleDiv skills-card">
-            <img width="96" height="96" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo"/>
+            <img className="skills-card-img" width="96" height="96" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo"/>
                 <p className='teckName skills-card-name'>mongo db</p>
             </div>
 
             
             <div className="singleDiv skills-card">
-            <img width="240" height="240" src="https://img.icons8.com/color/240/typescript.png" alt="typescript"/>
+            <img className="skills-card-img" width="240" height="240" src="https://img.icons8.com/color/240/typescript.png" alt="typescript"/>
                 <p className='teckName skills-card-name'>type script</p>
             </div>
 
             <div className="singleDiv skills-card">
-            <img width="240" height="240" src="https://img.icons8.com/color/240/html-5--v1.png" alt="html-5--v1"/>
+            <img className="skills-card-img" width="240" height="240" src="https://img.icons8.com/color/240/html-5--v1.png" alt="html-5--v1"/>
                 <p className='teckName skills-card-name'>HTML</p>
             </div>
             <div className="singleDiv skills-card">
-            <img width="240" height="240" src="https://img.icons8.com/color/240/css3.png" alt="css3"/>
+            <img className="skills-card-img" width="240" height="240" src="https://img.icons8.com/color/240/css3.png" alt="css3"/>
                 <p className='teckName skills-card-name'>css</p>
             </div>
             
 
             <div className="singleDiv skills-card">
-            <img width="240" height="240" src="https://img.icons8.com/color/240/javascript.png" alt="javascript"/>
+            <img className="skills-card-img" width="240" height="240" src="https://img.icons8.com/color/240/javascript.png" alt="javascript"/>
                 <p className='teckName skills-card-name'>java script</p>
             </div>
 

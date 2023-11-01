@@ -280,7 +280,7 @@ function Projects() {
 
                 <div className="gitLive">
                     <a className="project-github-link" href="https://github.com/audacity07/travello"><button>Git hub</button></a>
-                    <a href="https://sensational-starship-6bc092.netlify.app/"><button>Go Live</button></a>
+                    <a className="project-deployed-link" href="https://sensational-starship-6bc092.netlify.app/"><button>Go Live</button></a>
                 </div>
 
             </div>
