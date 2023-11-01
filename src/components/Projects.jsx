@@ -203,7 +203,7 @@ function Projects() {
     //     ))}
     //   </div>
     // </div>
-    <DIV>
+    <DIV id="projects">
     <h1>Projects</h1>
 
     <div className="outerDiv project-card">
@@ -281,6 +281,53 @@ function Projects() {
                 <div className="gitLive">
                     <a className="project-github-link" href="https://github.com/audacity07/travello"><button>Git hub</button></a>
                     <a href="https://sensational-starship-6bc092.netlify.app/"><button>Go Live</button></a>
+                </div>
+
+            </div>
+        
+    </div>
+
+    <div className="outerDiv project-card">
+        <div className="indiP">
+
+            <img className="projectPic" src={ecofood} alt="" />
+            </div>
+            <div className="sideData">
+                <h3 className="project-title">Eco Food</h3>
+
+                <p className="project-description">a dynamic online platform for fresh and delectable farm-fresh vegetables, fruits, and a selection of premium meats, including chicken, mutton, and seafood, delivered to your doorstep. </p>
+
+                <div className="techStacksTravelo project-tech-stack">
+                        
+
+
+                        <div className="singleDiv">
+                        <img src="https://img.icons8.com/officel/160/react.png" alt="react"/>
+                            <p className='teckName'>react</p>
+                        </div>
+
+
+                        <div className="singleDiv">
+                        <img width="240" height="240" src="https://img.icons8.com/color/240/chakra-ui.png" alt="chakra-ui"/>
+                            <p className='teckName'>chakra-ui</p>
+                        </div>
+
+                        <div className="singleDiv">
+                        <img width="240" height="240" src="https://img.icons8.com/color/240/css3.png" alt="css3"/>
+                            <p className='teckName'>css</p>
+                        </div>
+                        
+
+                        <div className="singleDiv">
+                        <img width="100" height="100" src="https://img.icons8.com/ios/100/api-settings.png" alt="api-settings"/>
+                            <p className='teckName'>Rest Api</p>
+                        </div>
+
+                </div>
+
+                <div className="gitLive">
+                    <a className="project-github-link" href="https://github.com/ankitsimari/sleek-circle-8356"><button>Git hub</button></a>
+                    <a className="project-deployed-link" href="https://ecofoodankit.vercel.app/"><button>Go Live</button></a>
                 </div>
 
             </div>

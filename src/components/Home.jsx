@@ -23,7 +23,7 @@ function Home() {
   
       <div className="my-info">
         <h2>Hey 👋 there! </h2>
-        <h1 >I am Hemanth</h1>
+        <h1 id="user-detail-name">I am Hemanth</h1>
         <h2>Full Stack Web Developer.</h2>
         <Link
             className="nav-link resume"
