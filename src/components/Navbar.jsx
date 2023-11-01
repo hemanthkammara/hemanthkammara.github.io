@@ -102,9 +102,11 @@ function Navbar() {
 
           <button
             id="resume-button-1"
+         
              onClick={resumedown}
           >
             <Link onClick={()=>goTo(false)} 
+            id="resume-link-1"
           className="nav-link resume"
            to="https://drive.google.com/uc?export=download&id=1wknVsNofpK-WkVndbvECcUQIFlQczKep"
         >Resume</Link>
