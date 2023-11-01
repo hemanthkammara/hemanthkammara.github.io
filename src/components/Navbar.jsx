@@ -122,7 +122,9 @@ function Navbar() {
 
         <a className="nav-link resume"
          href="https://drive.google.com/file/d/1wknVsNofpK-WkVndbvECcUQIFlQczKep/view?usp=sharing"
-          
+
+         id="resume-button-1"
+         
           target="_blank"
           onClick={() => {
             const link = document.createElement("a");
