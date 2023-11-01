@@ -326,8 +326,8 @@ function Projects() {
                 </div>
 
                 <div className="gitLive">
-                    <a className="project-github-link" href="https://github.com/ankitsimari/sleek-circle-8356"><button>Git hub</button></a>
-                    <a className="project-deployed-link" href="https://ecofoodankit.vercel.app/"><button>Go Live</button></a>
+                    <a className="project-github-link" href="https://github.com/hemanthkammara/volatile-wilderness-1112"><button>Git hub</button></a>
+                    <a className="project-deployed-link" href="https://github.com/hemanthkammara/volatile-wilderness-1112"><button>Go Live</button></a>
                 </div>
 
             </div>
