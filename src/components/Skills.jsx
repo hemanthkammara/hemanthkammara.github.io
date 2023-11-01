@@ -65,33 +65,33 @@ function Skills() {
 
             <div className="singleDiv skills-card">
             <img className="skills-card-img" width="240" height="240" src="https://img.icons8.com/fluency/240/node-js.png" alt="node-js"/>
-                <p className='teckName'>node js</p>
+                <p className='teckName skills-card-name'>node js</p>
             </div>
 
             <div className="singleDiv skills-card">
             <img className="skills-card-img" width="96" height="96" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo"/>
-                <p className='teckName skills-card-name'>mongo db</p>
+                <p className='skills-card-name'>mongo db</p>
             </div>
 
             
             <div className="singleDiv skills-card">
             <img className="skills-card-img" width="240" height="240" src="https://img.icons8.com/color/240/typescript.png" alt="typescript"/>
-                <p className='teckName skills-card-name'>type script</p>
+                <p className='skills-card-name'>type script</p>
             </div>
 
             <div className="singleDiv skills-card">
             <img className="skills-card-img" width="240" height="240" src="https://img.icons8.com/color/240/html-5--v1.png" alt="html-5--v1"/>
-                <p className='teckName skills-card-name'>HTML</p>
+                <p className='skills-card-name'>HTML</p>
             </div>
             <div className="singleDiv skills-card">
             <img className="skills-card-img" width="240" height="240" src="https://img.icons8.com/color/240/css3.png" alt="css3"/>
-                <p className='teckName skills-card-name'>css</p>
+                <p className='skills-card-name'>css</p>
             </div>
             
 
             <div className="singleDiv skills-card">
             <img className="skills-card-img" width="240" height="240" src="https://img.icons8.com/color/240/javascript.png" alt="javascript"/>
-                <p className='teckName skills-card-name'>java script</p>
+                <p className='skills-card-name'>java script</p>
             </div>
 
 
