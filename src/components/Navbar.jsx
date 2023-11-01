@@ -23,12 +23,12 @@ function Navbar() {
     sedisplay(true);
   };
 
-  // const resumedown = () => {
-  //   window.open(
-  //     "https://drive.google.com/file/d/1UBgt4cfEWrtO6DkeT8boJlXNJqLDL3kG/view?usp=sharing",
-  //     "_blank"
-  //   )
-  // };
+  const resumedown = () => {
+    window.open(
+      "https://drive.google.com/file/d/1wknVsNofpK-WkVndbvECcUQIFlQczKep/view?usp=sharing",
+      "_blank"
+    )
+  };
 
   return (
     <div className="navbar" id="nav-menu">
@@ -86,9 +86,9 @@ function Navbar() {
           Contact
         </a>
         {/* <a  className='nav-link resume' id='resume-button-1' href="#resume">Resume</a> */}
-        {/* <Link onClick={()=>goTo(false)} 
+        <Link onClick={()=>goTo(false)} 
           className="nav-link resume"
-          // to="https://drive.google.com/uc?export=download&id=1UBgt4cfEWrtO6DkeT8boJlXNJqLDL3kG"
+           to="https://drive.google.com/uc?export=download&id=1wknVsNofpK-WkVndbvECcUQIFlQczKep"
         >
           <button
             id="resume-button-1"
@@ -98,14 +98,14 @@ function Navbar() {
             //    fontWeight: "bold",
             //    fontSize: "20px",
             //  }}
-            // onClick={resumedown}
+             onClick={resumedown}
           >
             <i style={{ marginRight: "5px" }} className="far fa-file-alt"></i>
-            resume
+            Resume
           </button>
-        </Link> */}
+        </Link>
 
-        <Link
+        {/* <Link
           onClick={() => goTo(false)}
           className="nav-link resume"
           to="https://drive.google.com/file/d/1wknVsNofpK-WkVndbvECcUQIFlQczKep/view?usp=sharing"
@@ -123,7 +123,7 @@ function Navbar() {
             <i style={{ marginRight: "5px" }} className="far fa-file-alt"></i>
             Resume
           </button>
-        </Link>
+        </Link> */}
 
         {/* <a className="nav-link resume"
          href=""

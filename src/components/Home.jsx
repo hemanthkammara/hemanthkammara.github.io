@@ -7,12 +7,18 @@ import { Link } from "react-router-dom";
 
 function Home() {
 
-  const resumedown2 = () => {
+  // const resumedown2 = () => {
+  //   window.open(
+  //     "https://drive.google.com/file/d/1wknVsNofpK-WkVndbvECcUQIFlQczKep/view?usp=sharing",
+  //     "_blank"
+      
+  //   );
+  // };
+  const resumedown = () => {
     window.open(
       "https://drive.google.com/file/d/1wknVsNofpK-WkVndbvECcUQIFlQczKep/view?usp=sharing",
       "_blank"
-      
-    );
+    )
   };
 
 
@@ -26,20 +32,24 @@ function Home() {
         <h2>Hey 👋 there! </h2>
         <h1 id="user-detail-name">I am Hemanth</h1>
         <h2>Full Stack Web Developer.</h2>
-        {/* <Link
-            className="nav-link resume"
-            //to=""
-          >
-            <button
-              id="resume-button-2"
-              
-              onClick={resumedown2}
-            >
-              resume
-            </button>
-          </Link> */}
+       
 
-<Link
+        <Link 
+          className="nav-link resume"
+           to="https://drive.google.com/uc?export=download&id=1wknVsNofpK-WkVndbvECcUQIFlQczKep"
+        >
+          <button
+            id="resume-button-1"
+           
+             onClick={resumedown}
+          >
+            <i style={{ marginRight: "5px" }} className="far fa-file-alt"></i>
+            Resume
+          </button>
+        </Link>
+
+
+          {/* <Link
          
           className="nav-link resume"
           to="https://drive.google.com/file/d/1wknVsNofpK-WkVndbvECcUQIFlQczKep/view?usp=sharing"
@@ -57,7 +67,9 @@ function Home() {
             <i style={{ marginRight: "5px" }} className="far fa-file-alt"></i>
             Resume
           </button>
-        </Link>
+        </Link> */}
+
+
       </div>
       <div >
         <img className="home-img" src={myimg1} alt="" />
