@@ -1,53 +1,51 @@
-import styled from 'styled-components'
-export const Github=()=>{
-    return(
-        <DIV>
-            <h1>Github Stats</h1>
+import GitHubCalendar from "react-github-calendar";
+
+export default function Github() {
+  return (
+    <div className="gitcont">
+      <h1
+        style={{
+          fontSize: "30px",
+          marginBottom: "30px",
+          textAlign: "center",
+          fontWeight: "bold",
+        }}
+      >
+        Github
+      </h1>
+      <div className="hh">
+        <GitHubCalendar username="hemanthkammara"></GitHubCalendar>
+      </div>
+
+      {/* <p  style={{ width: "120%",textAlign:"center",marginLeft:"25px",marginBottom:"20px" }}></p> */}
 
 
-            <div className='gridGit'>
-
-            <p>&nbsp;<img align="center"  src="https://github-readme-stats.vercel.app/api?username=hemanthkammara&show_icons=true&locale=en" alt="hemanthkammara" /></p>
-
-            
-            <p ><img align="left"  src="https://github-readme-stats.vercel.app/api/top-langs?username=hemanthkammara&show_icons=true&locale=en&layout=compact" alt="hemanthkammara" /></p>
-            <p ><img align="center"  src="https://github-readme-streak-stats.herokuapp.com/?user=hemanthkammara&" alt="hemanthkammara" /></p>
+<div className="img_div">
 
 
+      <img
+        id="github-top-langs"
+        // style={{ width: "100%" }}
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=hemanthkammara&theme=light&hide_border=false&include_all_commits=false&count_private=true&layout=compact"
+        alt="hemanthkammara"
+      />
+
+      <img
+        id="github-stats-card"
+        // style={{ width: "100%" }}
+        src="https://github-readme-stats.vercel.app/api?username=hemanthkammara&theme=light&hide_border=false&include_all_commits=true&count_private=true"
+        alt="hemanthkammara"
+      />
+
+      <img
+        id="github-streak-stats"
+        // style={{ width: "100%" }}
+        src="https://github-readme-streak-stats.herokuapp.com?user=hemanthkammara"
+        alt="hemanthkammara"
+      />
 
 
-            </div>
-
-        </DIV>
-    )
+</div>
+    </div>
+  );
 }
-const DIV=styled.div`
-    display: flex;
-    flex-direction:column;
-    margin-top:75px;
-
-
-    .gridGit{
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-
-        /* display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 10px; */
-      
-
-    }
-p{
-    margin: 0;
-    padding: 0;
-    
-    align-items:center;
-}
-    h1{
-        text-align: center;
-    }
-`

@@ -1,149 +1,343 @@
-import { Link } from "react-router-dom"
+import React from "react";
+// import sastasafar from "../assests/sastasafar.png";
+// import abc from "../assests/abc.png";
+// import abc2 from "../assests/abc2.png";
+// import oddgrass from "../assests/odd grass.png";
+// import dressify from "../assests/dressify.png";
+// import oddgras from "../assests/oddgrass-2.png";
 import styled from 'styled-components'
-import explore from "../projectImages/explore.png"
-import ecofood from "../projectImages/ecofood.png"
-import travelo from "../projectImages/travelo.png"
-import { AiFillGithub } from "react-icons/ai";
+import explore from "../assests/explore.png"
+import ecofood from "../assests/ecofood.png"
+import travelo from "../assests/travelo.png"
+// import olx from "../assests/olx-2.png";
+// import iph from "../assests/iPhone 13f.png";
 
 
-export const Projects=()=>{
+import { FaCss3Alt, FaJsSquare, FaHtml5 } from "react-icons/fa";
+// https://react-icons.github.io/react-icons/icons?name=fa
 
-    return(
-        <DIV>
-            <h1>Projects</h1>
+// let projects = [
 
-            <div className="outerDiv">
-                <div className="indiP">
+//   {
+//     title: "Sasta safar",
+//     img1: abc,
+//     img2: iph,
+//     description: "Sasta Safar is an ecotourism website that empowers users to select their desired travel destinations and book their tickets. Whether users are planning a nature retreat or an adventurous expedition, Sasta Safar offers a user-friendly platform to explore various destinations and secure their travel tickets with ease",
+//     skills: [
+//       {
+//         name: "HTML",
+//         icon: <FaHtml5 />,
+//       },
+//       {
+//         name: "CSS",
+//         icon: <FaCss3Alt />,
+//       },
+//       {
+//         name: "JS",
+//         icon: <FaJsSquare />,
+//       },
+//     ],
+//     git: "https://github.com/mymsa123/quixotic-snail-9802",
+//     preview: "https://glittery-elf-a56a10.netlify.app/",
+//   },
+//   {
+//     title: "Dressify",
+//     img1: dressify,
+//     img2: abc2,
+//     description: "Dressify is one-stop destination for fashionable clothing  for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
+//     skills: [
+//       {
+//         name: "HTML",
+//         icon: <FaHtml5 />,
+//       },
+//       {
+//         name: "CSS",
+//         icon: <FaCss3Alt />,
+//       },
+//       {
+//         name: "JS",
+//         icon: <FaJsSquare />,
+//       },
+//     ],
+//     git: "https://github.com/astik0398/ambiguous-oven-8467",
+//     preview: "https://dressify-shopping.netlify.app/",
+//   },
+//   {
+//     title: "Odd Grass",
+//     img1: oddgrass,
+//     img2: oddgras,
+//     description: "Gamy Part is a website designed to help users explore the world . It offers convenient features that allow users to book destinations, hotels, and activities with just a tap. The platform boasts a simple and user-friendly UI/UX, ensuring a seamless experience for travelers looking to plan their journeys.",  
+    
+//     skills: [
+//       {
+//         name: "HTML",
+//         icon: <FaHtml5 />,
+//       },
+//       {
+//         name: "CSS",
+//         icon: <FaCss3Alt />,
+//       },
+//       {
+//         name: "JS",
+//         icon: <FaJsSquare />,
+//       },
+//     ],
+//     git: "https://github.com/harsh7739/odd-grass-4307",
+//     preview: "https://resonant-meringue-f6cdea.netlify.app/index.html",
+//   },
+//   {
+//     title: "Gamy-Part",
+//     img1: abc,
+//     img2: olx,
+//     description: "Gamy Part is a website clone of OLX, where users can browse and select products they want to buy. Similar to OLX, Gamy Part allows users to choose from a variety of products available on the platform.",
 
-                    <img className="projectPic" src={explore} alt="" />
-                    </div>
-                    <div className="sideData">
-                        <h3>Explore</h3>
+//     skills: [
+//       {
+//         name: "HTML",
+//         icon: <FaHtml5 />,
+//       },
+//       {
+//         name: "CSS",
+//         icon: <FaCss3Alt />,
+//       },
+//       {
+//         name: "JS",
+//         icon: <FaJsSquare />,
+//       },
+//     ],
+//     git: "https://github.com/mohdadil12345/gamy-part-5391",
+//     preview: "https://splendorous-arithmetic-9d81d2.netlify.app/",
+//   },
+  // {
+  //   title: "project-1",
+  //   img1: abc,
+  //   img2: abc2,
+  //   description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
 
-                        <p> a travel website that combines stunning destination showcases with a seamless flight booking experience. This website is not just a beautiful visual journey through the world's most incredible places but also a practical tool for travelers to easily book their flights. </p>
+  //   skills: [
+  //     {
+  //       name: "HTML",
+  //       icon: <FaHtml5 />,
+  //     },
+  //     {
+  //       name: "CSS",
+  //       icon: <FaCss3Alt />,
+  //     },
+  //     {
+  //       name: "JS",
+  //       icon: <FaJsSquare />,
+  //     },
+  //   ],
+  //   git: "https://github.com/astik0398/ambiguous-oven-8467",
+  //   preview: "https://dressify-shopping.netlify.app/",
+  // },
+  // {
+  //   title: "project-2",
+  //   img1: abc,
+  //   img2: abc2,
+  //   description: "Dressify is one-stop destination for fashionable clothing and accessories for men, women and children. Anyone can go through the wide range of products that are available on our website and order the desired one",
 
-                        <div className="techStacks">
-                                <div className="singleDiv">
-                                <img width="240" height="240" src="https://img.icons8.com/color/240/html-5--v1.png" alt="html-5--v1"/>
-                                    <p className='teckName'>HTML</p>
-                                </div>
-                                <div className="singleDiv">
-                                <img width="240" height="240" src="https://img.icons8.com/color/240/css3.png" alt="css3"/>
-                                    <p className='teckName'>css</p>
-                                </div>
-                                
+  //   skills: [
+  //     {
+  //       name: "HTML",
+  //       icon: <FaHtml5 />,
+  //     },
+  //     {
+  //       name: "CSS",
+  //       icon: <FaCss3Alt />,
+  //     },
+  //     {
+  //       name: "JS",
+  //       icon: <FaJsSquare />,
+  //     },
+  //   ],
+  //   git: "https://github.com/astik0398/ambiguous-oven-8467",
+  //   preview: "https://dressify-shopping.netlify.app/",
+  // },
+// ];
 
-                                <div className="singleDiv">
-                                <img width="240" height="240" src="https://img.icons8.com/color/240/javascript.png" alt="javascript"/>
-                                    <p className='teckName'>java script</p>
-                                </div>
-                       
-                        </div>
+function Projects() {
+  return (
+    // <div id="projects">
+    //   <h1>Projects </h1>
+    //   <div className="all_projects">
+    //     {projects.map((el) => (
+    //       <div className="project-card">
+    //         <div className="pro-img">
+    //           <img src={el.img1} alt="" />
+    //         </div>
+    //         <div className="pro-img1">
+    //           <img src={el.img2} alt="" />
+    //         </div>
 
-                        <div className="gitLive">
-                            <a href="https://github.com/hemanthkammara/skillful-dog-1445"><button>Git hub</button></a>
-                            <a href="https://adorable-gaufre-5079aa.netlify.app/ "><button>Go Live</button></a>
-                        </div>
+    //         <div className="pro-Info">
+    //           <h2 className="project-title">{el.title}</h2>
+    //           <p className="project-description">{el.description}</p>
+    //           <h2>Tech Stack</h2>
+    //           <div className="project-tech-stack">
+    //             {el.skills.map((skill) => (
+    //               <div className="skills-card">
+    //                 {skill.icon}
+    //                 <p style={{ fontSize: "20px" }}>{skill.name}</p>
+    //               </div>
+    //             ))}
+    //           </div>
+    //           <div className="pro-anchortag">
+    //             <a
+    //               className="project-github-link"
+    //               href={el.git}
+    //               target="_blank"
+    //             >
+    //               <button>Github Code</button>
+    //             </a>
+    //             <a
+    //               className="project-deployed-link"
+    //               target="_blank"
+    //               href={el.preview}
+    //             >
+    //               <button>Preview</button>
+    //             </a>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     ))}
+    //   </div>
+    // </div>
+    <DIV>
+    <h1>Projects</h1>
 
-                    </div>
-                
+    <div className="outerDiv project-card">
+        <div className="indiP">
+
+            <img className="projectPic" src={explore} alt="" />
             </div>
+            <div className="sideData">
+                <h3 className="project-title">Explore</h3>
 
+                <p className="project-description"> a travel website that combines stunning destination showcases with a seamless flight booking experience. This website is not just a beautiful visual journey through the world's most incredible places but also a practical tool for travelers to easily book their flights. </p>
 
-
-            <div className="outerDiv">
-                <div className="indiP">
-
-                    <img className="projectPic" src={travelo} alt="" />
-                    </div>
-                    <div className="sideData">
-                        <h3>Travelo</h3>
-
-                        <p>Introducing my travel website, where booking multiple destinations in one journey is made simple. . With a user-friendly interface and robust booking features, this site redefines the way you explore the world </p>
-
-                        <div className="techStacksTravelo">
-                                <div className="singleDiv">
-                                <img width="240" height="240" src="https://img.icons8.com/color/240/html-5--v1.png" alt="html-5--v1"/>
-                                    <p className='teckName'>HTML</p>
-                                </div>
-                                <div className="singleDiv">
-                                <img width="240" height="240" src="https://img.icons8.com/color/240/css3.png" alt="css3"/>
-                                    <p className='teckName'>css</p>
-                                </div>
-                                
-
-                                <div className="singleDiv">
-                                <img width="240" height="240" src="https://img.icons8.com/color/240/javascript.png" alt="javascript"/>
-                                    <p className='teckName'>java script</p>
-                                </div>
-
-                                <div className="singleDiv">
-                                <img width="100" height="100" src="https://img.icons8.com/ios/100/api-settings.png" alt="api-settings"/>
-                                    <p className='teckName'>Rest Api</p>
-                                </div>
-  
+                <div className="techStacks project-tech-stack">
+                        <div className="singleDiv">
+                        <img width="240" height="240" src="https://img.icons8.com/color/240/html-5--v1.png" alt="html-5--v1"/>
+                            <p className='teckName'>HTML</p>
                         </div>
-
-                        <div className="gitLive">
-                            <a href="https://github.com/audacity07/travello"><button>Git hub</button></a>
-                            <a href="https://sensational-starship-6bc092.netlify.app/"><button>Go Live</button></a>
+                        <div className="singleDiv">
+                        <img width="240" height="240" src="https://img.icons8.com/color/240/css3.png" alt="css3"/>
+                            <p className='teckName'>css</p>
                         </div>
+                        
 
-                    </div>
-                
+                        <div className="singleDiv">
+                        <img width="240" height="240" src="https://img.icons8.com/color/240/javascript.png" alt="javascript"/>
+                            <p className='teckName'>java script</p>
+                        </div>
+               
+                </div>
+
+                <div className="gitLive">
+                    <a className="project-github-link" href="https://github.com/hemanthkammara/skillful-dog-1445"><button>Git hub</button></a>
+                    <a className="project-deployed-link" href="https://adorable-gaufre-5079aa.netlify.app/ "><button>Go Live</button></a>
+                </div>
+
             </div>
-
-            <div className="outerDiv">
-                <div className="indiP">
-
-                    <img className="projectPic" src={ecofood} alt="" />
-                    </div>
-                    <div className="sideData">
-                        <h3>Eco Food</h3>
-
-                        <p>a dynamic online platform for fresh and delectable farm-fresh vegetables, fruits, and a selection of premium meats, including chicken, mutton, and seafood, delivered to your doorstep. </p>
-
-                        <div className="techStacksTravelo">
-                                
+        
+    </div>
 
 
-                                <div className="singleDiv">
-                                <img src="https://img.icons8.com/officel/160/react.png" alt="react"/>
-                                    <p className='teckName'>react</p>
-                                </div>
 
+    <div className="outerDiv project-card">
+        <div className="indiP">
 
-                                <div className="singleDiv">
-                                <img width="240" height="240" src="https://img.icons8.com/color/240/chakra-ui.png" alt="chakra-ui"/>
-                                    <p className='teckName'>chakra-ui</p>
-                                </div>
-
-                                <div className="singleDiv">
-                                <img width="240" height="240" src="https://img.icons8.com/color/240/css3.png" alt="css3"/>
-                                    <p className='teckName'>css</p>
-                                </div>
-                                
-
-                                <div className="singleDiv">
-                                <img width="100" height="100" src="https://img.icons8.com/ios/100/api-settings.png" alt="api-settings"/>
-                                    <p className='teckName'>Rest Api</p>
-                                </div>
-  
-                        </div>
-
-                        <div className="gitLive">
-                            <a href="https://github.com/ankitsimari/sleek-circle-8356"><button>Git hub</button></a>
-                            <a href="https://ecofoodankit.vercel.app/"><button>Go Live</button></a>
-                        </div>
-
-                    </div>
-                
+            <img className="projectPic" src={travelo} alt="" />
             </div>
+            <div className="sideData">
+                <h3 className="project-title">Travelo</h3>
+
+                <p className="project-description">Introducing my travel website, where booking multiple destinations in one journey is made simple. . With a user-friendly interface and robust booking features, this site redefines the way you explore the world </p>
+
+                <div className="techStacksTravelo project-tech-stack">
+                        <div className="singleDiv">
+                        <img width="240" height="240" src="https://img.icons8.com/color/240/html-5--v1.png" alt="html-5--v1"/>
+                            <p className='teckName'>HTML</p>
+                        </div>
+                        <div className="singleDiv">
+                        <img width="240" height="240" src="https://img.icons8.com/color/240/css3.png" alt="css3"/>
+                            <p className='teckName'>css</p>
+                        </div>
+                        
+
+                        <div className="singleDiv">
+                        <img width="240" height="240" src="https://img.icons8.com/color/240/javascript.png" alt="javascript"/>
+                            <p className='teckName'>java script</p>
+                        </div>
+
+                        <div className="singleDiv">
+                        <img width="100" height="100" src="https://img.icons8.com/ios/100/api-settings.png" alt="api-settings"/>
+                            <p className='teckName'>Rest Api</p>
+                        </div>
+
+                </div>
+
+                <div className="gitLive">
+                    <a className="project-github-link" href="https://github.com/audacity07/travello"><button>Git hub</button></a>
+                    <a href="https://sensational-starship-6bc092.netlify.app/"><button>Go Live</button></a>
+                </div>
+
+            </div>
+        
+    </div>
+
+    <div className="outerDiv project-card">
+        <div className="indiP">
+
+            <img className="projectPic" src={ecofood} alt="" />
+            </div>
+            <div className="sideData">
+                <h3 className="project-title">Eco Food</h3>
+
+                <p className="project-description">a dynamic online platform for fresh and delectable farm-fresh vegetables, fruits, and a selection of premium meats, including chicken, mutton, and seafood, delivered to your doorstep. </p>
+
+                <div className="techStacksTravelo project-tech-stack">
+                        
+
+
+                        <div className="singleDiv">
+                        <img src="https://img.icons8.com/officel/160/react.png" alt="react"/>
+                            <p className='teckName'>react</p>
+                        </div>
+
+
+                        <div className="singleDiv">
+                        <img width="240" height="240" src="https://img.icons8.com/color/240/chakra-ui.png" alt="chakra-ui"/>
+                            <p className='teckName'>chakra-ui</p>
+                        </div>
+
+                        <div className="singleDiv">
+                        <img width="240" height="240" src="https://img.icons8.com/color/240/css3.png" alt="css3"/>
+                            <p className='teckName'>css</p>
+                        </div>
+                        
+
+                        <div className="singleDiv">
+                        <img width="100" height="100" src="https://img.icons8.com/ios/100/api-settings.png" alt="api-settings"/>
+                            <p className='teckName'>Rest Api</p>
+                        </div>
+
+                </div>
+
+                <div className="gitLive">
+                    <a className="project-github-link" href="https://github.com/ankitsimari/sleek-circle-8356"><button>Git hub</button></a>
+                    <a className="project-deployed-link" href="https://ecofoodankit.vercel.app/"><button>Go Live</button></a>
+                </div>
+
+            </div>
+        
+    </div>
 
 
 
-        </DIV>
-    )
+</DIV>
+  )
 }
 const DIV=styled.div`
 margin: auto;
@@ -241,3 +435,12 @@ h1{
         width: 10%;
     }
 `
+export default Projects;
+
+// Each project card in the Projects section should have class="project-card" and the following:
+// Image of the project
+// Title : class="project-title"
+// Description : class="project-description"
+// Tech stack used : class="project-tech-stack"
+// Link to GitHub repository : class="project-github-link"
+// Deployed link or video link : class="project-deployed-link"

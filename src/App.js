@@ -1,32 +1,16 @@
-import styled from 'styled-components'
-import { Hero } from './components/Hero';
-import { Navbar } from './components/Navbar';
-import { AboutMe } from './components/AboutMe';
-import { TechStacks } from './components/TechStacks';
-import { Projects } from './components/Projects';
-import { Github } from './components/Github';
-import { Contact } from './components/Contack';
+import './App.css';
+import AllRoutes from './components/AllRoutes';
+import Navbar from './components/Navbar';
+
+import './components/Global.scss'
 
 function App() {
   return (
-    <DIV className="App">
-      
-             
-     <Navbar/>
-     <Hero/>
-     <AboutMe/>
-     <TechStacks/>
-     <Projects/>
-
-    <Github/>
-    <Contact/>
-    </DIV>
+    <div>
+      <Navbar/>
+      <AllRoutes/>
+    </div>
   );
 }
-const DIV=styled.div`
-/* background-color:black; */
-
-/* height: 10005px; */
-`
 
 export default App;
