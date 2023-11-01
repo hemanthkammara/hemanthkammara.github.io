@@ -86,24 +86,19 @@ function Navbar() {
           Contact
         </a>
         {/* <a  className='nav-link resume' id='resume-button-1' href="#resume">Resume</a> */}
-        <Link onClick={()=>goTo(false)} 
+        {/* <Link onClick={()=>goTo(false)} 
           className="nav-link resume"
            to="https://drive.google.com/uc?export=download&id=1wknVsNofpK-WkVndbvECcUQIFlQczKep"
         >
           <button
             id="resume-button-1"
-            //  style={{
-            //    background: "none",
-            //    border: "none",
-            //    fontWeight: "bold",
-            //    fontSize: "20px",
-            //  }}
+            
              onClick={resumedown}
           >
             <i style={{ marginRight: "5px" }} className="far fa-file-alt"></i>
             Resume
           </button>
-        </Link>
+        </Link> */}
 
         {/* <Link
           onClick={() => goTo(false)}
@@ -125,8 +120,8 @@ function Navbar() {
           </button>
         </Link> */}
 
-        {/* <a className="nav-link resume"
-         href=""
+        <a className="nav-link resume"
+         href="https://drive.google.com/file/d/1wknVsNofpK-WkVndbvECcUQIFlQczKep/view?usp=sharing"
           
           target="_blank"
           onClick={() => {
@@ -136,8 +131,8 @@ function Navbar() {
             link.click();
           }}
           >
-         resume
-          </a> */}
+         Resume
+          </a>
       </div>
     </div>
   );
