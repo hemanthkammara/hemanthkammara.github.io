@@ -9,11 +9,13 @@ import styled from 'styled-components'
 import explore from "../assests/explore.png"
 import ecofood from "../assests/ecofood.png"
 import travelo from "../assests/travelo.png"
+import gurukulam from "../assests/gurukulam.png"
 // import olx from "../assests/olx-2.png";
 // import iph from "../assests/iPhone 13f.png";
 
 
 import { FaCss3Alt, FaJsSquare, FaHtml5 } from "react-icons/fa";
+import { useSelector } from "react-redux";
 // https://react-icons.github.io/react-icons/icons?name=fa
 
 // let projects = [
@@ -157,6 +159,7 @@ import { FaCss3Alt, FaJsSquare, FaHtml5 } from "react-icons/fa";
 // ];
 
 function Projects() {
+    const theme=useSelector((state)=>{return state.themeReducer.themeDark})
   return (
     // <div id="projects">
     //   <h1>Projects </h1>
@@ -203,7 +206,7 @@ function Projects() {
     //     ))}
     //   </div>
     // </div>
-    <DIV id="projects">
+    <DIV theme={theme} id="projects">
     <h1>Projects</h1>
 
     <div className="outerDiv project-card">
@@ -216,7 +219,8 @@ function Projects() {
 
                 <p className="project-description"> a travel website that combines stunning destination showcases with a seamless flight booking experience. This website is not just a beautiful visual journey through the world's most incredible places but also a practical tool for travelers to easily book their flights. </p>
 
-                <div className="techStacks project-tech-stack">
+                {/* <div className="techStacks project-tech-stack"> */}
+                <div className="techStacks ">
                         <div className="singleDiv">
                         <img width="240" height="240" src="https://img.icons8.com/color/240/html-5--v1.png" alt="html-5--v1"/>
                             <p className='teckName'>HTML</p>
@@ -255,7 +259,7 @@ function Projects() {
 
                 <p className="project-description">Introducing my travel website, where booking multiple destinations in one journey is made simple. . With a user-friendly interface and robust booking features, this site redefines the way you explore the world </p>
 
-                <div className="techStacksTravelo project-tech-stack">
+                <div className="techStacksTravelo project-tech-stac">
                         <div className="singleDiv">
                         <img width="240" height="240" src="https://img.icons8.com/color/240/html-5--v1.png" alt="html-5--v1"/>
                             <p className='teckName'>HTML</p>
@@ -290,14 +294,14 @@ function Projects() {
     <div className="outerDiv project-card">
         <div className="indiP">
 
-            <img className="projectPic" src={ecofood} alt="" />
+            <img className="projectPic" src={gurukulam} alt="" />
             </div>
             <div className="sideData">
-                <h3 className="project-title">Eco Food</h3>
+                <h3 className="project-title">Gurukulam</h3>
 
                 <p className="project-description">a dynamic online platform for fresh and delectable farm-fresh vegetables, fruits, and a selection of premium meats, including chicken, mutton, and seafood, delivered to your doorstep. </p>
 
-                <div className="techStacksTravelo project-tech-stack">
+                <div className="techStacksTravelo project-tech-stac">
                         
 
 
@@ -344,7 +348,7 @@ function Projects() {
 
                 <p className="project-description">a dynamic online platform for fresh and delectable farm-fresh vegetables, fruits, and a selection of premium meats, including chicken, mutton, and seafood, delivered to your doorstep. </p>
 
-                <div className="techStacksTravelo project-tech-stack">
+                <div className="techStacksTravelo project-tech-stac">
                         
 
 
@@ -390,14 +394,15 @@ const DIV=styled.div`
 margin: auto;
 h1{
     text-align: center;
+    margin-bottom: 25px;
 }
 
     .outerDiv{
         display: flex;
         width: 70%;
-        border: 1px solid black;
+        border: 1px solid ${(props) => (props.theme===true ? "white" : "black")};
         margin:auto;
-        border-radius:35px;
+        border-radius:5px;
         margin-bottom:35px;
     }
     .indiP{
@@ -421,8 +426,8 @@ h1{
     .projectPic{
         width: 100%;
         height: 100%;
-        border-top-left-radius:35px;
-        border-bottom-left-radius:35px;
+        /* border-top-left-radius:35px;
+        border-bottom-left-radius:35px; */
        
     }
 
@@ -470,14 +475,30 @@ h1{
     button{
         /* bg="black" color="white" mt={5} mb={5} width="80%" height="30px" */
         
-        color:  #691923;
+        /* color:  #691923;
         color: black;
         width: 150%;
         font-size:15px;
         border-radius: 5px;
-        border: none;
+        border: none; */
         
     }
+
+
+
+    button{
+            background-color: ${(props) => (props.theme===true ? "black" : "white")};
+            color: ${(props) => (props.theme===true ? "white" : "black")};
+
+            border: 1px solid ${(props) => (props.theme===true ? "white" : "black")};
+        
+            
+
+}
+
+button:hover{
+  color:#691923
+}
     .gitlogo{
         width: 10%;
     }

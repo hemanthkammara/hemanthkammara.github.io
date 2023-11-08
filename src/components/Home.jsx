@@ -2,8 +2,11 @@ import React from "react";
 
 
 import myimg1 from "../assests/my img1.png";
+import myimg2 from "../assests/newProfiePic2.png";
 import resume from "../assests/certificate.pdf";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+import { useSelector } from "react-redux";
 
 function Home() {
 
@@ -14,6 +17,7 @@ function Home() {
       
   //   );
   // };
+  const theme=useSelector((state)=>{return state.themeReducer.themeDark})
   
   const resumedown = () => {
     window.open(
@@ -25,14 +29,14 @@ function Home() {
 
 
   return (
-    <div id="home">
+    <DIV theme={theme} id="home">
       {/* <img className="backk" src="https://moneer-portfolio.netlify.app/static/media/fogtree.950d4c4e05476e6c70bb.jpg" alt="" /> */}
 
   
-      <div className="my-info">
-        <h2>Hey 👋 there! </h2>
-        <h1 id="user-detail-name">I am Hemanth</h1>
-        <h2>Full Stack Web Developer.</h2>
+      <div className="my-inf">
+        <h3>Hey 👋! </h3>
+        <h3 id="user-detail-name">I'm<span> Hemanth</span></h3>
+        <h3>Full Stack Web Developer.</h3>
        
 
         <Link 
@@ -41,11 +45,11 @@ function Home() {
         >
           <button
             id="resume-button-2"
-           
+          
              onClick={resumedown}
           >
-            <i style={{ marginRight: "5px" }} className="far fa-file-alt"></i>
-            Resume
+            {/* <i style={{ marginRight: "5px" }} className="far fa-file-alt"></i> */}
+           DOWNLOAD MY CV
           </button>
         </Link>
 
@@ -73,11 +77,46 @@ function Home() {
 
       </div>
       <div >
-        <img className="home-img" src={myimg1} alt="" />
+        <img className="home-im" src={myimg1} alt="" />
       </div>
 
-    </div>
+    </DIV>
   );
 }
 
 export default Home;
+
+const DIV=styled.div`
+  background-color: ${(props) => (props.theme===true ? "black" : "white")};
+color: ${(props) => (props.theme===true ? "white" : "black")};
+
+span{
+  color:#691923
+}
+
+
+button{
+  background-color: ${(props) => (props.theme===true ? "black" : "white")};
+color: ${(props) => (props.theme===true ? "white" : "black")};
+
+border: 1px solid ${(props) => (props.theme===true ? "white" : "black")};
+padding: 8px;
+
+margin-top: 20px;
+
+}
+
+button:hover{
+  color:#691923
+}
+
+img{
+  //filter: grayscale(50%);
+  filter: ${(props) => (props.theme===true ? "grayscale(50%)" : "")};
+  background-color: white;
+  //box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow:  ${(props) => (props.theme===true ? " rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" : " rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset")};
+ 
+}
+`
+

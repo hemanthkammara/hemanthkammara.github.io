@@ -4,11 +4,16 @@ import { Link } from "react-router-dom";
 import { MdMenu } from "react-icons/md";
 import { FaXmark } from "react-icons/fa6";
 import resume from "../assests/certificate.pdf";
+import { useDispatch, useSelector } from "react-redux";
+import { changeTheme } from "../Redux/action";
+import styled from "styled-components";
 
 function Navbar() {
   const [show, setshow] = useState(true);
   const [display, sedisplay] = useState(true);
   const [currentPath, setCurrentPath] = useState(window.location.hash);
+
+  const theme=useSelector((state)=>{return state.themeReducer.themeDark})
 
   const toggle = () => {
     setshow(!show);
@@ -22,6 +27,12 @@ function Navbar() {
     setshow(true);
     sedisplay(true);
   };
+  const dispatch=useDispatch()
+  console.log(theme,"hem,anth check theme")
+
+  const handleTheme=()=>{
+      dispatch(changeTheme(!theme))
+  }
 
   const resumedown = () => {
     window.open(
@@ -31,7 +42,7 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar" id="nav-menu">
+    <DIV theme={theme} className="navbar" id="nav-menu">
       <div>
         <h1>Hemanth</h1>
       </div>
@@ -149,12 +160,22 @@ function Navbar() {
           >
          Resume
           </a> */}
+          <button onClick={handleTheme}>{theme===true?"light":"dark"}</button>
 
 
           
       </div>
-    </div>
+    </DIV>
   );
 }
 
 export default Navbar;
+
+const DIV=styled.div`
+  background-color: ${(props) => (props.theme===true ? "black" : "white")};
+color: ${(props) => (props.theme===true ? "white" : "black")};
+
+a{
+  color: ${(props) => (props.theme===true ? "white" : "black")};
+}
+`

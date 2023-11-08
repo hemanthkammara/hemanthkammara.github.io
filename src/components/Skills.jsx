@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components'
 import { FaCss3Alt, FaJsSquare, FaHtml5 } from "react-icons/fa";
+import { useSelector } from "react-redux";
 {/* <FaHtml5 style={{ fontSize: "100px" }} />
 <FaJsSquare style={{ fontSize: "100px" }} />
 <FaCss3Alt style={{ fontSize: "100px" }} /> */}
@@ -33,6 +34,7 @@ const skills = [
 
 
 function Skills() {
+  const theme=useSelector((state)=>{return state.themeReducer.themeDark})
   return (
     // <div id="skills">
     //   <h1>Skills and Tools</h1>
@@ -48,7 +50,7 @@ function Skills() {
     //   ))}
     // </div>
     // </div>
-    <DIV id="skills">
+    <DIV theme={theme} id="skills">
     <h1 style={{marginTop:"40px",marginBottom:"35px"}}>Skills</h1>
 <div className='outerDiv'>
 
@@ -108,7 +110,8 @@ margin-bottom:50px;
 .outerDiv{
 
     width: 70%;
-    border:1px solid black;
+   
+    border: 1px solid ${(props) => (props.theme===true ? "white" : "black")};
     /* border:1px solid white; */
     border-radius: 25px;
     display: flex;

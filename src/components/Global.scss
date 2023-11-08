@@ -44,14 +44,15 @@ html {
 .menu-btn {
   display: none;
 }
-.navbar a:hover ,.navbar a:hover #resume-button-1 , .navbar a.link-active {
+.navbar a:hover ,.navbar a:hover #resume-button-1 , .navbar a.link-activ {
   // background-image: linear-gradient(-45deg,blue,skyblue);
   // background-image: linear-gradient(-45deg, rgb(78, 78, 163), rgb(50, 56, 58));
   // background-image: linear-gradient(-45deg,rgb(109, 109, 109),rgb(0, 0, 0));
   background-size: 200%;
   font-size: 20px;
   border-radius: 4px;
-  color: blue;
+  color: 
+  #691923;
   // padding: 1px;
 }
 .navbar h1 {
@@ -350,24 +351,24 @@ html {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
 
-  button {
-   // padding: 20px 20px;
-    margin-top: 30px;
-    border-radius: 8px;
-    border: none;
-   // background-image: linear-gradient(-45deg, rgb(64, 64, 67), skyblue);
-   background-color: rgb(77, 72, 72);
-    color: white;
-    background-size: 200%;
-    font-size: 25px;
-  }
-  button:hover {
-    background-image: linear-gradient(-45deg,rgb(109, 109, 109),rgb(0, 0, 0));
-    background-color: rgb(43, 42, 42);
-    background-size: 200%;
-    cursor: pointer;
-    color: white;
-  }
+  // button {
+  //  // padding: 20px 20px;
+  //   margin-top: 30px;
+  //   border-radius: 8px;
+  //   border: none;
+  //  // background-image: linear-gradient(-45deg, rgb(64, 64, 67), skyblue);
+  //  background-color: black;
+  //   color: white;
+  //   background-size: 200%;
+  //   font-size: 25px;
+  // }
+  // button:hover {
+  //   background-image: linear-gradient(-45deg,rgb(109, 109, 109),rgb(0, 0, 0));
+  //   background-color: rgb(43, 42, 42);
+  //   background-size: 200%;
+  //   cursor: pointer;
+  //   color: white;
+  // }
   .my-info {
     // background-image: linear-gradient(-45deg, rgb(252, 252, 252), rgb(81, 81, 81));
     padding: 20px 30px;
