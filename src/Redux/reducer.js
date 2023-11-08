@@ -1,7 +1,7 @@
 import { CHANGE_THEME } from "./actionType"
 
 const initialState ={
-  themeDark:true
+  themeDark:false
 }
 
 export const reducer = (state=initialState,{type,payload})=>{

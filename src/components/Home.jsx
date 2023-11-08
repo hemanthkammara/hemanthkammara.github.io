@@ -99,10 +99,11 @@ button{
   background-color: ${(props) => (props.theme===true ? "black" : "white")};
 color: ${(props) => (props.theme===true ? "white" : "black")};
 
-border: 1px solid ${(props) => (props.theme===true ? "white" : "black")};
+border: ${(props) => (props.theme===true ? "1px" : "0px")} solid ${(props) => (props.theme===true ? "white" : "black")};
 padding: 8px;
-
+//border: ${(props) => (props.theme===true ? "white" :"none")};
 margin-top: 20px;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
 }
 
@@ -116,7 +117,8 @@ img{
   filter: ${(props) => (props.theme===true ? "" : "")};
   background-color: white;
   //box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  box-shadow:  ${(props) => (props.theme===true ? "10px 10px 0px grey" : " rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset")};
+ box-shadow:  ${(props) => (props.theme===true ? "10px 10px 0px grey" : " rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset")};
+ // box-shadow:  ${(props) => (props.theme===true ? "10px 10px 0px grey" : "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;")};
  
 }
 .imgDiv{

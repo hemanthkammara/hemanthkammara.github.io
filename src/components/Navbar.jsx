@@ -160,7 +160,7 @@ function Navbar() {
           >
          Resume
           </a> */}
-          <button onClick={handleTheme}>{theme===true?"light":"dark"}</button>
+          <button className="themeButton" onClick={handleTheme}>{theme===true?"light":"dark"}</button>
 
 
           
@@ -176,6 +176,31 @@ const DIV=styled.div`
 color: ${(props) => (props.theme===true ? "white" : "black")};
 
 a{
+ //border: 1px solid black;
+ position: relative;
   color: ${(props) => (props.theme===true ? "white" : "black")};
 }
+a::after{
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+height: 2px;
+width: 0%;
+background-color: ${(props) => (props.theme===true ? "white" : "black")};
+transition: all ease 1s;
+}
+
+a:hover::after{
+  width: 100%;
+}
+
+
+
+.themeButton{
+  width: 45px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
 `

@@ -69,4 +69,10 @@ const DIV=styled.div`
   padding: 10px;
   margin-bottom: 15px;
 }
+
+img{
+  
+}
+
+
 `

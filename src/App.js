@@ -26,6 +26,7 @@ background-color: ${(props) => (props.theme===true ? "black" : "white")};
 color: ${(props) => (props.theme===true ? "white" : "black")};
 
 
+
 `
 
 
