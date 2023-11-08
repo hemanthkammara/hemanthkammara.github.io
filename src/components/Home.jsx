@@ -7,6 +7,7 @@ import resume from "../assests/certificate.pdf";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
+import { FaGithub, FaLinkedin, FaLinkedinIn } from "react-icons/fa6";
 
 function Home() {
 
@@ -34,15 +35,19 @@ function Home() {
 
   
       <div className="my-inf">
-        <h3>Hey 👋! </h3>
+        {/* <h3>Hey 👋! </h3> */}
+        <h3>Hey ! </h3>
         <h3 id="user-detail-name">I'm<span> Hemanth</span></h3>
         <h3>Full Stack Web Developer.</h3>
        
+
+       <div className="downloadLinks">
 
         <Link 
           className="nav-link resume"
            to="https://drive.google.com/uc?export=download&id=1wknVsNofpK-WkVndbvECcUQIFlQczKep"
         >
+         
           <button
             id="resume-button-2"
           
@@ -52,6 +57,23 @@ function Home() {
            DOWNLOAD MY CV
           </button>
         </Link>
+
+        <div className="my_ico">
+          <a id="contact-github" href="https://github.com/hemanthkammara">
+            <FaGithub/>
+          </a>
+          <br />
+          <a
+            id="contact-linkedin"
+            href="https://www.linkedin.com/in/hemanth-kumar-kammara/"
+          >
+           <FaLinkedin/>
+          </a>
+        </div>
+       </div>
+
+
+       
 
 
           {/* <Link
@@ -76,9 +98,12 @@ function Home() {
 
 
       </div>
+      
       <div className="imgDiv">
         <img className="home-im" src={myimg1} alt="" />
       </div>
+
+     
 
     </DIV>
   );
@@ -91,7 +116,9 @@ const DIV=styled.div`
 color: ${(props) => (props.theme===true ? "white" : "black")};
 
 span{
-  color:#691923
+  //color:#691923;
+  color:#d63447;
+ // color:#6d0b17;
 }
 
 
@@ -103,12 +130,14 @@ border: ${(props) => (props.theme===true ? "1px" : "0px")} solid ${(props) => (p
 padding: 8px;
 //border: ${(props) => (props.theme===true ? "white" :"none")};
 margin-top: 20px;
-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+//box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+box-shadow: ${(props) => (props.theme===true ? "2px 2px 0px grey" :"rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset")};
 
 }
 
 button:hover{
-  color:#691923
+  //color:#691923
+  color:#d63447;
 }
 
 img{
@@ -128,5 +157,39 @@ padding-right: 14px;
 border-bottom: 1px solid grey; */
 //border-bottom-right-radius: 15px;
 }
+
+
+#contact-github,#contact-linkedin{
+   // color:#691923 ;
+    color:#d63447;
+    //color: ${(props) => (props.theme===true ? "#d63447" : "#691923")};;
+    margin-left: 15px;
+    font-size: 35px;
+    height: 40px;
+  text-align: center;
+  width: 105px;
+  //box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: ${(props) => (props.theme===true ? "1px 1px 0px grey" : "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset")};;
+}
+  .my_ico{
+    display: flex;
+    width: 33%;
+    justify-content: space-between;
+  align-items: center;
+margin-top: 15px;
+margin-left: 35px;
+
+  }
+  .downloadLinks{
+  display: flex;
+align-items: center;
+  }
+  @media only screen and (max-width: 650px) {
+.my-inf{
+margin-top: 20px;
+}
+
+  }
+
 `
 

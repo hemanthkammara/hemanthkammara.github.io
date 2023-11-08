@@ -34,7 +34,8 @@ function Contact() {
 export default Contact;
 const DIV=styled.div`
   #contact-github,#contact-linkedin{
-    color:#691923 ;
+    //color:#691923 ;
+    color:#d63447;
   }
 
 
@@ -46,13 +47,16 @@ const DIV=styled.div`
   justify-content: center;
    text-align: center;  
    /* color : white; */
-   border-bottom: 3px solid #691923;
-  
+  // border-bottom: 3px solid #691923;
+  border-bottom: 3px solid #d63447;
 }
 a{
   text-align: center;
   width: 45px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background-color: ${(props) => (props.theme===true ? "" : "white")};;
+ // border: 1px solid ${(props) => (props.theme===true ? "grey":"rgba(76, 72, 72, 0.4)")};
+  //box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+box-shadow: ${(props) => (props.theme===true ? "1px 1px 0px grey" : "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset")};;
 }
 
 .aboutDiv{

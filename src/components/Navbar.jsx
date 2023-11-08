@@ -9,6 +9,7 @@ import { changeTheme } from "../Redux/action";
 import styled from "styled-components";
 
 function Navbar() {
+  const[title,setTitle]=useState("<Hemanth/>")
   const [show, setshow] = useState(true);
   const [display, sedisplay] = useState(true);
   const [currentPath, setCurrentPath] = useState(window.location.hash);
@@ -28,7 +29,7 @@ function Navbar() {
     sedisplay(true);
   };
   const dispatch=useDispatch()
-  console.log(theme,"hem,anth check theme")
+  console.log(theme,"hemanth check theme")
 
   const handleTheme=()=>{
       dispatch(changeTheme(!theme))
@@ -44,7 +45,7 @@ function Navbar() {
   return (
     <DIV theme={theme} className="navbar" id="nav-menu">
       <div>
-        <h1>Hemanth</h1>
+        <h3>{title}</h3>
       </div>
       <button className="menu-btn" onClick={toggle}>
         {show ? <MdMenu /> : <FaXmark />}
@@ -171,9 +172,24 @@ function Navbar() {
 
 export default Navbar;
 
+
+
 const DIV=styled.div`
   background-color: ${(props) => (props.theme===true ? "black" : "white")};
 color: ${(props) => (props.theme===true ? "white" : "black")};
+
+.links{
+  background-color: ${(props) => (props.theme===true ? "black" : "white")};
+color: ${(props) => (props.theme===true ? "white" : "black")};
+}
+.menu-btn {
+  color: ${(props) => (props.theme===true ? "white" : "black")};
+}
+
+#menu-btn{
+   background-color: ${(props) => (props.theme===true ? "black" : "white")};
+color: ${(props) => (props.theme===true ? "white" : "black")};
+}
 
 a{
  //border: 1px solid black;
@@ -201,6 +217,9 @@ a:hover::after{
   width: 45px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+h3{
+  margin-left: 35px;
 }
 
 `

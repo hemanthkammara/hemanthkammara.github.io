@@ -60,8 +60,8 @@ const DIV=styled.div`
   justify-content: center;
    text-align: center;  
    /* color : white; */
-   border-bottom: 3px solid #691923;
-  
+ //  border-bottom: 3px solid #691923;
+ border-bottom: 3px solid #d63447;
 }
 
 .gitH{
@@ -71,7 +71,7 @@ const DIV=styled.div`
 }
 
 img{
-  
+
 }
 
 

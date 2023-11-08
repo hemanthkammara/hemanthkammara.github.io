@@ -273,14 +273,15 @@ function Projects() {
                         </div>
                         
                         <div className="singleDiv">
+                        <img width="240" height="240" src="https://img.icons8.com/color/240/javascript.png" alt="javascript"/>
+                            <p className='teckName'>java script</p>
+                        </div>
+
+                        <div className="singleDiv">
                         <img width="100" height="100" src="https://img.icons8.com/ios/100/api-settings.png" alt="api-settings"/>
                             <p className='teckName'>Rest Api</p>
                         </div>
 
-                        <div className="singleDiv">
-                        <img width="240" height="240" src="https://img.icons8.com/color/240/javascript.png" alt="javascript"/>
-                            <p className='teckName'>java script</p>
-                        </div>
 
 
                 </div>
@@ -511,7 +512,8 @@ h1{
 }
 
 button:hover{
-  color:#691923
+ // color:#691923;
+  color:#d63447;
 }
     .gitlogo{
         width: 10%;
@@ -529,11 +531,31 @@ h1{
   justify-content: center;
    text-align: center;  
    /* color : white; */
-   border-bottom: 3px solid #691923;
-  
+  // border-bottom: 3px solid #691923;
+  border-bottom: 3px solid #d63447;
 }
 
+@media only screen and (max-width: 650px) {
+    .outerDiv{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+       // border: 1px solid ${(props) => (props.theme===true ? "white" : "black")};
+        margin:auto;
+        margin-bottom:20px;
+        //border-radius:5px;
+    }
+    .indiP{
+        width: 100%;
+    }
+    .indiP img{
+width: 100%;
+    }
+    .sideData{
+        width: 100%;
+    }
 
+    }
 
 
 `

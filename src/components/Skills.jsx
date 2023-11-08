@@ -135,8 +135,8 @@ h1{
   justify-content: center;
    text-align: center;  
    /* color : white; */
-   border-bottom: 3px solid #691923;
-  
+   //border-bottom: 3px solid #691923;
+   border-bottom: 3px solid #d63447;
 }
 
 .skillDiv{
@@ -185,6 +185,15 @@ p{
         font-size: 25px;
         padding: 0;
         
+    }
+
+    @media only screen and (max-width: 650px) {
+      .gridDiv{
+        width: 100%;
+grid-template-columns: repeat(2,1fr);
+
+}
+
     }
 `
 
