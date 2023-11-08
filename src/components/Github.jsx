@@ -1,8 +1,12 @@
 import GitHubCalendar from "react-github-calendar";
+import styled from "styled-components";
 
 export default function Github() {
+
   return (
-    <div className="gitcont">
+    <DIV className="gitcont">
+      <div className="gitH">
+
       <h1
         style={{
           fontSize: "30px",
@@ -13,6 +17,7 @@ export default function Github() {
       >
         Github
       </h1>
+      </div>
       <div className="hh">
         <GitHubCalendar username="hemanthkammara"></GitHubCalendar>
       </div>
@@ -46,6 +51,22 @@ export default function Github() {
 
 
 </div>
-    </div>
+    </DIV>
   );
 }
+const DIV=styled.div`
+   h1{
+  display: inline;
+  justify-content: center;
+   text-align: center;  
+   /* color : white; */
+   border-bottom: 3px solid #691923;
+  
+}
+
+.gitH{
+  text-align: center; 
+  padding: 10px;
+  margin-bottom: 15px;
+}
+`

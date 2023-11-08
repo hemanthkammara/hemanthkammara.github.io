@@ -207,7 +207,10 @@ function Projects() {
     //   </div>
     // </div>
     <DIV theme={theme} id="projects">
+        <div className="projectDiv">
+
     <h1>Projects</h1>
+        </div>
 
     <div className="outerDiv project-card">
         <div className="indiP">
@@ -400,10 +403,16 @@ h1{
     .outerDiv{
         display: flex;
         width: 70%;
-        border: 1px solid ${(props) => (props.theme===true ? "white" : "black")};
+       // border: 1px solid ${(props) => (props.theme===true ? "white" : "black")};
         margin:auto;
-        border-radius:5px;
+        //border-radius:5px;
         margin-bottom:35px;
+        border: 1px solid ${(props) => (props.theme===true ? "grey":"white")};
+ 
+
+ box-shadow: ${(props) => (props.theme===true ? "5px 5px 0px grey" : "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px")};
+
+
     }
     .indiP{
         width: 55%;
@@ -502,6 +511,26 @@ button:hover{
     .gitlogo{
         width: 10%;
     }
+
+
+.projectDiv{
+    text-align: center; 
+  padding: 10px;
+  margin-bottom: 45px;
+}
+
+h1{
+  display: inline;
+  justify-content: center;
+   text-align: center;  
+   /* color : white; */
+   border-bottom: 3px solid #691923;
+  
+}
+
+
+
+
 `
 export default Projects;
 

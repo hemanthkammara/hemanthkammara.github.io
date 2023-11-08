@@ -51,7 +51,10 @@ function Skills() {
     // </div>
     // </div>
     <DIV theme={theme} id="skills">
+      <div className="skillDiv">
+
     <h1 style={{marginTop:"40px",marginBottom:"35px"}}>Skills</h1>
+      </div>
 <div className='outerDiv'>
 
     <div className='gridDiv'>
@@ -111,20 +114,38 @@ margin-bottom:50px;
 
     width: 70%;
    
-    border: 1px solid ${(props) => (props.theme===true ? "white" : "black")};
+    //border: 0.2px solid ${(props) => (props.theme===true ? "grey" : "black")};
     /* border:1px solid white; */
-    border-radius: 25px;
+    //border-radius: 25px;
     display: flex;
    justify-content: center; /* Center horizontally */
    align-items: center;
    margin: auto;
    padding: 30px;
+
+  // box-shadow: ${(props) => (props.theme===true ? "10px 10px 0px grey" : "")};
+   border: 1px solid ${(props) => (props.theme===true ? "grey":"white")};
+ 
+
+ box-shadow: ${(props) => (props.theme===true ? "10px 10px 0px grey" : "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px")};
 }
 
 h1{
+  display: inline;
+  justify-content: center;
    text-align: center;  
    /* color : white; */
+   border-bottom: 3px solid #691923;
+  
 }
+
+.skillDiv{
+  text-align: center; 
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+
 p{
     /* color: white; */
 }

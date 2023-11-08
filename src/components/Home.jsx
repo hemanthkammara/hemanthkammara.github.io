@@ -76,7 +76,7 @@ function Home() {
 
 
       </div>
-      <div >
+      <div className="imgDiv">
         <img className="home-im" src={myimg1} alt="" />
       </div>
 
@@ -112,11 +112,19 @@ button:hover{
 
 img{
   //filter: grayscale(50%);
-  filter: ${(props) => (props.theme===true ? "grayscale(50%)" : "")};
+  //border-radius: 15px;
+  filter: ${(props) => (props.theme===true ? "" : "")};
   background-color: white;
   //box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  box-shadow:  ${(props) => (props.theme===true ? " rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset" : " rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset")};
+  box-shadow:  ${(props) => (props.theme===true ? "10px 10px 0px grey" : " rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset")};
  
+}
+.imgDiv{
+padding-bottom: 5px;
+padding-right: 14px;
+/* border-right: 1px solid grey;
+border-bottom: 1px solid grey; */
+//border-bottom-right-radius: 15px;
 }
 `
 

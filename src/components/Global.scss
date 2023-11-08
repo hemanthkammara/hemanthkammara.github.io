@@ -241,7 +241,7 @@ html {
     padding: 20px 30px;
     border-radius: 8px;
     color: #ffffff;
-   background: #5079cf;
+   //background: #5079cf;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -374,12 +374,8 @@ html {
     padding: 20px 30px;
     text-align: center;
     border-radius: 8px;
-    h1,
-    h2 {
-      color: #5079cf;
-      color: rgb(53, 52, 52);
-
-    }
+    
+   
   }
 }
 
