@@ -37,7 +37,7 @@ function Navbar() {
 
   const resumedown = () => {
     window.open(
-      "https://drive.google.com/file/d/1eJNuLrRh52VaIaQcL4OJwfpuTWTHb8zq/view?usp=sharing",
+      "https://drive.google.com/file/d/1LEavLeWVKUxh7xzOQUcBGw7SJhje8zxv/view?usp=sharing",
       "_blank"
     )
   };
@@ -120,7 +120,7 @@ function Navbar() {
             <Link onClick={()=>goTo(false)} 
             id="resume-link-1"
           className="nav-link resume"
-           to="https://drive.google.com/uc?export=download&id=1eJNuLrRh52VaIaQcL4OJwfpuTWTHb8zq"
+           to="https://drive.google.com/uc?export=download&id=1LEavLeWVKUxh7xzOQUcBGw7SJhje8zxv"
         >Resume</Link>
          
           </button>
