@@ -535,7 +535,7 @@ h1{
   border-bottom: 3px solid #d63447;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 770px) {
     .outerDiv{
         display: flex;
         flex-direction: column;

@@ -18,7 +18,7 @@ function About() {
      <div className="about_car text">
       {/* <img className="about_img" src={img2} alt="" /> */}
       <p id="user-detail-intro" className="my-details">
-      "I'm Hemanth Kumar, a dedicated full-stack web developer with a strong focus on building user-centric web applications. I'm passionate about creating robust, modern websites and thrive on problem-solving. My background includes extensive experience in both front-end and back-end development. I'm committed to delivering high-quality, scalable solutions and continuously expanding my skillset. My goal is to drive value for the organizations I work with through innovative web development with skills like CSS,MERN and JAVASCRIPT." 
+     A dedicated full-stack web developer with a strong focus on building user-centric web applications. and passionate about creating robust, modern websites and thrives on problem-solving.  background includes extensive experience in both front-end and back-end development. committed to delivering high-quality, scalable solutions and continuously expanding his skillset.  goal is to drive value for the organizations and works with through innovative web development, with skills like CSS, MERN, and JavaScript" 
       </p>
      </div>
 
@@ -57,7 +57,7 @@ const DIV=styled.div`
 
 
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 770px) {
  
   .text{
   margin: auto;

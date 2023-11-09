@@ -187,7 +187,7 @@ p{
         
     }
 
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 770px) {
       .gridDiv{
         width: 100%;
 grid-template-columns: repeat(2,1fr);

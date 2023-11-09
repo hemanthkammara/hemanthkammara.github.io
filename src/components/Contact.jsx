@@ -11,8 +11,8 @@ function Contact() {
 
         <h2>Contact-Me</h2>
         </div>
-        <p id="contact-phone">+91 9989537586</p>
-        <p id="contact-email">hemanthcr217@gmail.com</p>
+        <p id="contact-phone">Contact-No:+91 9989537586</p>
+        <p id="contact-email">Email:hemanthcr217@gmail.com</p>
 
         <div className="my_icon">
           <a id="contact-github" href="https://github.com/hemanthkammara">

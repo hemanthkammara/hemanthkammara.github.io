@@ -161,7 +161,7 @@ function Navbar() {
           >
          Resume
           </a> */}
-          <button className="themeButton" onClick={handleTheme}>{theme===true?"light":"dark"}</button>
+          <button className="themeButton" onClick={handleTheme}>{theme===true?"Light":"Dark"}</button>
 
 
           
@@ -214,6 +214,7 @@ a:hover::after{
 
 
 .themeButton{
+  font-weight: 600;
   width: 45px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;

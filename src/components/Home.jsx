@@ -123,6 +123,7 @@ span{
 
 
 button{
+  font-weight: 600;
   background-color: ${(props) => (props.theme===true ? "black" : "white")};
 color: ${(props) => (props.theme===true ? "white" : "black")};
 
@@ -184,7 +185,7 @@ margin-left: 35px;
   display: flex;
 align-items: center;
   }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 770px) {
 .my-inf{
 margin-top: 20px;
 }
