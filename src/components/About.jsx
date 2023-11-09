@@ -58,10 +58,13 @@ const DIV=styled.div`
 
 
 @media only screen and (max-width: 770px) {
+  #about{
+    width:90% ;
+  }
  
   .text{
   margin: auto;
-  width: 80%;
+  width: 95%;
   border: 1px solid ${(props) => (props.theme===true ? "grey":"white")};
  
 

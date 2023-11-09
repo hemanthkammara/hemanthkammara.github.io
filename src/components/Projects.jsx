@@ -446,9 +446,9 @@ h1{
     width: 70%;
     margin: auto;
     /* border: 1px solid black; */
-    /* display: grid; */
+    // display: grid; 
     display: flex;
-    /* grid-template-columns: repeat(4,1fr); */
+    // grid-template-columns: repeat(4,1fr); 
     row-gap: 10px;
     }
     .techStacksTravelo{
@@ -554,6 +554,20 @@ width: 100%;
     .sideData{
         width: 100%;
     }
+
+  button{
+    //margin-left: 10px;
+    width: 100%;
+    font-size: 25px;
+    gap: 10px;
+  }
+  .project-tech-stac{
+    width: 100%;
+  }
+  .techStacks{
+    width: 100%;
+  }
+
 
     }
 

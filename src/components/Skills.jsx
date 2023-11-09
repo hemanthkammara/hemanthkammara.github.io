@@ -186,12 +186,25 @@ p{
         padding: 0;
         
     }
+    @media only screen and (min-width: 651px) and (max-width: 900px) {
+      .gridDiv{
+        width: 100%;
+grid-template-columns: repeat(3,1fr);
 
-    @media only screen and (max-width: 770px) {
+}
+}
+
+    @media only screen and (max-width: 650px) {
       .gridDiv{
         width: 100%;
 grid-template-columns: repeat(2,1fr);
 
+}
+#skills{
+width: 95%;
+}
+.outerDiv{
+  width: 95%;
 }
 
     }

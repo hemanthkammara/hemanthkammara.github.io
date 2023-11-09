@@ -223,4 +223,17 @@ h3{
   margin-left: 35px;
 }
 
+@media only screen and (min-width: 771px) and (max-width: 900px) {
+.navbar{
+  width: 100%;
+}
+.navbar a {
+  color: rgb(24, 23, 23);
+  font-weight: 600;
+  padding: 14px 30px;
+  min-width: 50px;
+  text-align: center;
+}
+}
+
 `

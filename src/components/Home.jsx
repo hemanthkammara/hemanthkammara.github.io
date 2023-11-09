@@ -188,7 +188,9 @@ align-items: center;
   @media only screen and (max-width: 770px) {
 .my-inf{
 margin-top: 20px;
+padding-left: 35px;
 }
+
 
   }
 
