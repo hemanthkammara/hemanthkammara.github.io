@@ -5,13 +5,13 @@
  // font-family: 'Raleway', sans-serif;
 }
 
-body::-webkit-scrollbar{
-background:linear-gradient(black,white);
-}
-body::-webkit-scrollbar-thumb{
-  background: linear-gradient(white,grey,black);
-  border-radius: 20px;
-}
+// body::-webkit-scrollbar{
+// background:linear-gradient(black,white);
+// }
+// body::-webkit-scrollbar-thumb{
+//   background: linear-gradient(white,grey,black);
+//   border-radius: 20px;
+// }
 
 
 
@@ -27,7 +27,7 @@ html {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
 
    background: rgb(0, 200, 255);
-   background: white;
+  // background: white;
   z-index: 9999;
 
   height: 60px;
@@ -50,7 +50,7 @@ html {
    background: none;
   border: none;
   font-size: 20px;
-  color: white;
+  
  color: rgb(40, 38, 38);
   font-weight: 600;
 }
@@ -360,9 +360,9 @@ html {
     height: 413px;
     width: 413px;
     object-fit: contain;
-    border-radius: 50%;
+   //border-radius: 50%;
     // border: 2px solid #5079cf;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+   // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
 
   // button {
@@ -413,7 +413,7 @@ html {
 @media only screen and (max-width: 650px) {
   .navbar {
     // background-color: red;
-    // display: none;
+    //display: none;
 
     .links {
       //background-color: white;
@@ -427,6 +427,7 @@ html {
       gap: 20px;
       right: 0px;
       transition: right 1s;
+      //transition: all ease 1s;
     }
     .menu-btn {
       display: block;
@@ -455,13 +456,17 @@ html {
 
   #home {
     // display: none;
+    body{
+      width: 100%;
+    }
     
     font-size: 20px;
     height: 100vh;
     flex-direction: column-reverse;
     font-size: 20px;
     justify-content: center;
-    .home-img {
+    .home-im {
+
       width: 300px;
       height: 300px;
 
@@ -493,7 +498,7 @@ html {
     }
   }
   #about {
-    width: calc(100% - 40px);
+   // width: calc(100% - 40px);
     margin: 20px;
     
     .about_img {

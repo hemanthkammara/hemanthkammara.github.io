@@ -25,7 +25,9 @@ const DIV=styled.div`
 background-color: ${(props) => (props.theme===true ? "black" : "white")};
 color: ${(props) => (props.theme===true ? "white" : "black")};
 
-
+@media only screen and (max-width: 600px) {
+  width: 100%;
+}
 
 `
 

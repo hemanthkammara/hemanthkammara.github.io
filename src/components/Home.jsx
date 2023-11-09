@@ -22,7 +22,7 @@ function Home() {
   
   const resumedown = () => {
     window.open(
-      "https://drive.google.com/file/d/1wknVsNofpK-WkVndbvECcUQIFlQczKep/view?usp=sharing",
+      "https://drive.google.com/file/d/1eJNuLrRh52VaIaQcL4OJwfpuTWTHb8zq/view?usp=sharing",
       "_blank"
     )
   };
@@ -45,7 +45,7 @@ function Home() {
 
         <Link 
           className="nav-link resume"
-           to="https://drive.google.com/uc?export=download&id=1wknVsNofpK-WkVndbvECcUQIFlQczKep"
+           to="https://drive.google.com/uc?export=download&id=1eJNuLrRh52VaIaQcL4OJwfpuTWTHb8zq"
         >
          
           <button
@@ -100,7 +100,7 @@ function Home() {
       </div>
       
       <div className="imgDiv">
-        <img className="home-im" src={myimg1} alt="" />
+        <img className="home-img" src={myimg1} alt="" />
       </div>
 
      
