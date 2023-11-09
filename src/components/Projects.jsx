@@ -533,9 +533,66 @@ h1{
    /* color : white; */
   // border-bottom: 3px solid #691923;
   border-bottom: 3px solid #d63447;
+
+}
+@media only screen and (min-width: 651px) and (max-width: 900px) {
+    .outerDiv{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+       // border: 1px solid ${(props) => (props.theme===true ? "white" : "black")};
+        margin:auto;
+        margin-bottom:20px;
+        //border-radius:5px;
+    }
+    .indiP{
+        width: 100%;
+    }
+    .indiP img{
+width: 100%;
+    }
+    .sideData{
+        width: 100%;
+    }
+    button{
+    //margin-left: 10px;
+    width: 100%;
+    font-size: 20px;
+    gap: 10px;
+  }
+  .project-tech-stac{
+    width: 80%;
+  }
+  .techStacks{
+    width: 80%;
+  }
+  .singleDiv img{
+    width: 50%;
+        height: 50%;
+  }
+  h3{
+    margin-bottom: 5px;
+  }
+  p{
+    font-size: 23px;
+  }
+  .singleDiv p{
+    font-size: 25px;
+  }
+  .gitLive a{
+    width: 40%;
+    font-size: 10px;
+  }
+  .gitLive a button{
+    font-size: 30px;
+  }
+ 
+
 }
 
-@media only screen and (max-width: 770px) {
+
+
+@media only screen and (max-width: 650px) {
     .outerDiv{
         display: flex;
         flex-direction: column;
@@ -558,7 +615,7 @@ width: 100%;
   button{
     //margin-left: 10px;
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
     gap: 10px;
   }
   .project-tech-stac{
@@ -566,6 +623,13 @@ width: 100%;
   }
   .techStacks{
     width: 100%;
+  }
+  .singleDiv img{
+    width: 50%;
+        height: 50%;
+  }
+  h3{
+    margin-bottom: 5px;
   }
 
 

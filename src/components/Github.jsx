@@ -19,7 +19,7 @@ export default function Github() {
       </h1>
       </div>
       <div className="hh">
-        <GitHubCalendar username="hemanthkammara"></GitHubCalendar>
+        <GitHubCalendar className="calender" username="hemanthkammara"></GitHubCalendar>
       </div>
 
       {/* <p  style={{ width: "120%",textAlign:"center",marginLeft:"25px",marginBottom:"20px" }}></p> */}
@@ -64,15 +64,13 @@ const DIV=styled.div`
  border-bottom: 3px solid #d63447;
 }
 
+
 .gitH{
   text-align: center; 
   padding: 10px;
   margin-bottom: 15px;
 }
 
-img{
-
-}
 
 
 `

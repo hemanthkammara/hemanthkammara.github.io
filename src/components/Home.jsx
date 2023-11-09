@@ -7,6 +7,7 @@ import resume from "../assests/certificate.pdf";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
+
 import { FaGithub, FaLinkedin, FaLinkedinIn } from "react-icons/fa6";
 
 function Home() {
@@ -124,6 +125,7 @@ span{
 
 button{
   font-weight: 600;
+  //font-family: Raleway, sans-serif;
   background-color: ${(props) => (props.theme===true ? "black" : "white")};
 color: ${(props) => (props.theme===true ? "white" : "black")};
 
@@ -189,6 +191,13 @@ align-items: center;
 .my-inf{
 margin-top: 20px;
 padding-left: 35px;
+}
+.imgDiv{
+  width: 95%;
+  
+}
+.home-img{
+  width: 100%;
 }
 
 

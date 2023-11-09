@@ -5,6 +5,8 @@ import { MdMenu } from "react-icons/md";
 import { FaXmark } from "react-icons/fa6";
 import resume from "../assests/certificate.pdf";
 import { useDispatch, useSelector } from "react-redux";
+import { MdDarkMode} from "react-icons/md";
+import { BsFillBrightnessHighFill } from "react-icons/bs";
 import { changeTheme } from "../Redux/action";
 import styled from "styled-components";
 
@@ -161,7 +163,7 @@ function Navbar() {
           >
          Resume
           </a> */}
-          <button className="themeButton" onClick={handleTheme}>{theme===true?"Light":"Dark"}</button>
+          <button className="themeButton" onClick={handleTheme}>{theme===true?<BsFillBrightnessHighFill/>:<MdDarkMode/>}</button>
 
 
           
@@ -214,10 +216,22 @@ a:hover::after{
 
 
 .themeButton{
-  font-weight: 600;
+  //font-weight: 600;
   width: 45px;
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  height: 35px;
+  font-size: 25px;
+  text-align: center;
+  background-color: ${(props) => (props.theme===true ? "black" : "white")};
+color: ${(props) => (props.theme===true ? "white" : "black")};
+  border: ${(props) => (props.theme===true ? "1px" : "0px")} solid ${(props) => (props.theme===true ? "white" : "black")};
+  box-shadow: ${(props) => (props.theme===true ? "2px 2px 0px grey" :"rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset")};
+
+  //border: none;
+ // box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.themeButton:hover{
+  //color:#691923
+  color:#d63447;
 }
 h3{
   margin-left: 35px;

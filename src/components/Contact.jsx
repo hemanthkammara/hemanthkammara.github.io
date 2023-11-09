@@ -1,5 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaLinkedinIn } from "react-icons/fa6";
+import { IoCall } from "react-icons/io5";
+import { BiLogoGmail } from "react-icons/bi";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
 function Contact() {
@@ -11,8 +13,8 @@ function Contact() {
 
         <h2>Contact-Me</h2>
         </div>
-        <p id="contact-phone">Contact-No:+91 9989537586</p>
-        <p id="contact-email">Email:hemanthcr217@gmail.com</p>
+        <p ><IoCall id="contact-phone"/>:+91 9989537586</p>
+        <p ><BiLogoGmail id="contact-email"/> hemanthcr217@gmail.com</p>
 
         <div className="my_icon">
           <a id="contact-github" href="https://github.com/hemanthkammara">
@@ -33,12 +35,14 @@ function Contact() {
 
 export default Contact;
 const DIV=styled.div`
-  #contact-github,#contact-linkedin{
+  #contact-github,#contact-linkedin,#contact-email,#contact-phone{
     //color:#691923 ;
     color:#d63447;
   }
 
-
+  #contact-email,#contact-phone{
+   align-items: center;
+  }
 
 
   
