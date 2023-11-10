@@ -1,5 +1,6 @@
 import GitHubCalendar from "react-github-calendar";
 import styled from "styled-components";
+import Github1 from "./Github1";
 
 export default function Github() {
 
@@ -25,10 +26,11 @@ export default function Github() {
       {/* <p  style={{ width: "120%",textAlign:"center",marginLeft:"25px",marginBottom:"20px" }}></p> */}
 
 
+ 
 <div className="img_div">
 
 
-      <img
+      {/* <img
         id="github-top-langs"
         // style={{ width: "100%" }}
         src="https://github-readme-stats.vercel.app/api/top-langs/?username=hemanthkammara&theme=light&hide_border=false&include_all_commits=false&count_private=true&layout=compact"
@@ -47,7 +49,7 @@ export default function Github() {
         // style={{ width: "100%" }}
         src="https://github-readme-streak-stats.herokuapp.com?user=hemanthkammara"
         alt="hemanthkammara"
-      />
+      /> */}
 
 
 </div>

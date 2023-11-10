@@ -32,6 +32,7 @@ html {
 
   height: 60px;
   display: flex;
+  flex-wrap: wrap;
   /* justify-content: space-evenly; */
   align-items: center;
   position: fixed;
@@ -394,7 +395,9 @@ html {
 }
 
 .img_div {
+  width: 90%;
   display: flex;
+  flex-wrap: wrap;
   padding: 30px;
   justify-content: space-between;
   gap: 20px;

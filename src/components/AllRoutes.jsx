@@ -6,6 +6,7 @@ import Skills from "./Skills"
 import Projects from "./Projects"
 import Contact from "./Contact"
 import Github from './Github'
+import Github1 from './Github1'
 
 function AllRoutes() {
   return (
@@ -15,7 +16,7 @@ function AllRoutes() {
       <About/>
       <Skills/>
       <Projects/>
-      <Github/>
+      <Github1/>
       <Contact/>
     </div>
   )
