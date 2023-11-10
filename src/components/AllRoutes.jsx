@@ -16,7 +16,7 @@ function AllRoutes() {
       <About/>
       <Skills/>
       <Projects/>
-      <Github1/>
+      <Github/>
       <Contact/>
     </div>
   )

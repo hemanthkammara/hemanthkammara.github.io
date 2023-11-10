@@ -23,6 +23,10 @@ export default function Github() {
         <GitHubCalendar className="calender" username="hemanthkammara"></GitHubCalendar>
       </div>
 
+      <div className="git">
+        <Github1/>
+      </div>
+
       {/* <p  style={{ width: "120%",textAlign:"center",marginLeft:"25px",marginBottom:"20px" }}></p> */}
 
 
@@ -71,6 +75,9 @@ const DIV=styled.div`
   text-align: center; 
   padding: 10px;
   margin-bottom: 15px;
+}
+.git{
+  width: 90%;
 }
 
 

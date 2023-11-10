@@ -72,7 +72,7 @@ const DIV=styled.div`
        // overflow: hidden;
         width: 80%;
         height: 434px;
-       border: 1px solid black;
+       //border: 1px solid black;
         text-align: center;
     }
     img{
@@ -83,12 +83,17 @@ const DIV=styled.div`
 
     @media only screen and (max-width: 800px) {
         .mySwiper{
-        width: 80%;
+        width: 95%;
        // border: 1px dotted red;
     }
     .slideOne{
         height: 304px;
       width: 100%;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+       //object-fit: cover;
     }
 
     }

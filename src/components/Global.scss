@@ -413,9 +413,11 @@ html {
 }
 
 @media only screen and (min-width: 771px) and (max-width: 900px) {
+
 .navbar{
   width: 100%;
 }
+
 .navbar a {
   color: rgb(24, 23, 23);
   font-weight: 600;
@@ -423,6 +425,11 @@ html {
   min-width: 50px;
   text-align: center;
 }
+
+
+
+
+
 }
 
 .img_div {
@@ -431,7 +438,6 @@ html {
   flex-wrap: nowrap;
   justify-content: space-between;
   gap: 20px;
-
 }
 
 
@@ -451,6 +457,7 @@ html {
    // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
   .navbar {
+    width: 99%;
     // background-color: red;
     //display: none;
 
