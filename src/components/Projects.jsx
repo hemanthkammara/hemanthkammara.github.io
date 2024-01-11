@@ -10,6 +10,7 @@ import explore from "../assests/explore.png"
 import ecofood from "../assests/ecofood.png"
 import travelo from "../assests/travelo.png"
 import gurukulam from "../assests/gurukulam.png"
+import plant from "../assests/plant.png"
 // import olx from "../assests/olx-2.png";
 // import iph from "../assests/iPhone 13f.png";
 
@@ -298,12 +299,12 @@ function Projects() {
     <div className="outerDiv project-card">
         <div className="indiP">
 
-            <img className="projectPic" src={gurukulam} alt="" />
+            <img className="projectPic" src={plant} alt="" />
             </div>
             <div className="sideData">
-                <h3 className="project-title">Gurukulam</h3>
+                <h3 className="project-title">Gardenium</h3>
 
-                <p className="project-description">a dynamic online platform for fresh and delectable farm-fresh vegetables, fruits, and a selection of premium meats, including chicken, mutton, and seafood, delivered to your doorstep. </p>
+                <p className="project-description">a online platform for shopping plants and  delivered to your doorstep. </p>
 
                 <div className="techStacksTravelo project-tech-stac">
                         
@@ -334,8 +335,8 @@ function Projects() {
                 </div>
 
                 <div className="gitLive">
-                    <a className="project-github-link" href="https://github.com/hemanthkammara/volatile-wilderness-1112"><button>Git hub</button></a>
-                    <a className="project-deployed-link" href="https://gurukulam.netlify.app/"><button>Go Live</button></a>
+                    <a className="project-github-link" href="https://github.com/ankitsimari/Gardenium"><button>Git hub</button></a>
+                    <a className="project-deployed-link" href="https://plant-website-y4qr.vercel.app/"><button>Go Live</button></a>
                 </div>
 
             </div>

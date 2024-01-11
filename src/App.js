@@ -21,6 +21,7 @@ console.log(theme,"theme appjs")
 export default App;
 
 const DIV=styled.div`
+width: 100%;
 
 background-color: ${(props) => (props.theme===true ? "black" : "white")};
 color: ${(props) => (props.theme===true ? "white" : "black")};

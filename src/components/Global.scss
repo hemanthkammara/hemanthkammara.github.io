@@ -12,7 +12,9 @@
 //   background: linear-gradient(white,grey,black);
 //   border-radius: 20px;
 // }
-
+.body{
+  width: 100%;
+}
 
 
 
@@ -416,6 +418,8 @@ html {
 
 .navbar{
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navbar a {
@@ -457,7 +461,9 @@ html {
    // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
   .navbar {
-    width: 99%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     // background-color: red;
     //display: none;
 
@@ -479,7 +485,7 @@ html {
       display: block;
       position: fixed;
       //right: 20px;
-      right: 15px;
+      right: 0px;
       z-index: 9999;
       background: none;
       border: none;
@@ -502,6 +508,8 @@ html {
   }
 
   #home {
+    
+   
     // display: none;
     body{
       width: 100%;
