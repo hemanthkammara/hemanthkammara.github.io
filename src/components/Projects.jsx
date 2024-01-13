@@ -304,7 +304,7 @@ function Projects() {
             <div className="sideData">
                 <h3 className="project-title">Gardenium</h3>
 
-                {/* <p className="project-description">a online platform for shopping plants and  delivered to your doorstep. </p> */}
+               
                 <p className="project-description">a online plateform for shopping plants offering seamless user experiences from secure login and captivating product pages and  sorting, filtering, and an empowered admin panel for efficient CRUD operations and insightful charts integration </p>
 
                 <div className="techStacksTravelo project-tech-stac">
