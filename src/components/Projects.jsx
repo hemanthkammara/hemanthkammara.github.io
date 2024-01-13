@@ -339,6 +339,10 @@ function Projects() {
                     <a className="project-github-link" href="https://github.com/ankitsimari/Gardenium"><button>Git hub</button></a>
                     <a className="project-deployed-link" href="https://plant-website-y4qr.vercel.app/"><button>Go Live</button></a>
                 </div>
+                {/* <div className="gitLive">
+                    <a className="project-github-link" href="https://github.com/ankitsimari/Gardenium"><button>Git hub</button></a>
+                    <a className="project-deployed-link" href="https://plant-website-y4qr.vercel.app/"><button>Go Live</button></a>
+                </div> */}
 
             </div>
         
